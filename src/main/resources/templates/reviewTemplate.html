@@ -6,17 +6,25 @@
 <body>
 
 <header>
-    <h1 th:text="${reviewModel.title}"></h1>
 </header>
 
 <main>
-    <ul>
-        <p><a href="/reviews">Team Avatar Members</a></p>
-        <li th:text="${reviewModel.title}"></li>
-    </ul>
-    <h2 th:text="${reviewModel.reviewCategory}"></h2>
+    <nav>
+        <a href="/reviews">Team Avatar Members</a>
+    </nav>
+    <h1 th:text="${reviewModel.title}"></h1>
+        <div>
+            <p><img th:src="${reviewModel.image}"></p>
+            <h5 th:text="' Nickname: ' + ${reviewModel.nickname}"></h5>
+            <h3 th:text="${reviewModel.reviewCategory}"></h3>
+            <p th:text="${reviewModel.content}"></p>
+            <h4 th:text=" ' Nationality: ' + ${reviewModel.nationality}"></h4>
+            <h4 th:text=" ' Love Interests: ' + ${reviewModel.loveInterests}"></h4>
+            <h4 th:text=" ' Weapons of Choice: ' + ${reviewModel.weaponsOfChoice}"></h4>
+            <h4 th:text=" ' Fighting Styles: ' + ${reviewModel.fightingStyles}"></h4>
+            <h4 th:text=" ' Special Skills: ' + ${reviewModel.specialSkill}"></h4>
+        </div>
 </main>
-
 <footer>
     <small>&copy roseholmesminton 2021</small>
 </footer>

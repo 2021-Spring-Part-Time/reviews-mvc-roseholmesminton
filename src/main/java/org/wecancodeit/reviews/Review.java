@@ -58,7 +58,7 @@ public class Review {
         return specialSkill;
     }
 
-    public Review(long id, String title, String image, String nickname, String reviewCategory, String content, String nationality, String loveInterests, String weaponsOfChoice, String fightingStyles, String SpecialSkill) {
+    public Review(Long id, String title, String image, String nickname, String reviewCategory, String content, String nationality, String loveInterests, String weaponsOfChoice, String fightingStyles, String specialSkill) {
         this.id = id;
         this.title = title;
         this.image = image;
@@ -69,6 +69,6 @@ public class Review {
         this.loveInterests = loveInterests;
         this.weaponsOfChoice = weaponsOfChoice;
         this.fightingStyles = fightingStyles;
-        this.specialSkill = SpecialSkill;
+        this.specialSkill= specialSkill;
     }
 }
