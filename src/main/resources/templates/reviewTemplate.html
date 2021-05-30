@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${reviewModel.title}"></title>
+</head>
+<body>
+
+<header>
+    <h1 th:text="${reviewModel.title}"></h1>
+</header>
+
+<main>
+    <ul>
+        <p><a href="/reviews">Team Avatar Members</a></p>
+        <li th:text="${courseModel.title}"></li>
+    </ul>
+    <h2 th:text="${courseModel.category}"></h2>
+</main>
+
+<footer>
+    <small>&copy roseholmesminton 2021</small>
+</footer>
+
+</body>
+</html>
