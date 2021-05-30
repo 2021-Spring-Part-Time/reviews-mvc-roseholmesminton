@@ -33,14 +33,14 @@ public class ReviewControllerMvcTest {
     @Test
     public void shouldBeOkForAllReviewsInTheReviewTemplate() throws Exception {
         mockMvc.perform(get("/reviews")).andExpect(status().isOk())
-                .andExpect(view().name("ReviewsTemplate"));
+                .andExpect(view().name("reviewsTemplate"));
     }
 
     @Test
     public void shouldFindAllReviewsInTheModel() throws Exception {
-        Collection<Review> allCoursesInModel = Arrays.asList(reviewOne, reviewTwo);
+        Collection<Review> allReviewsInModel = Arrays.asList(reviewOne, reviewTwo);
         when(reviewRepo.findAll()).thenReturn(allReviewsInModel);
-        mockMvc.perform(get("/review"))
+        mockMvc.perform(get("/reviews"))
                 .andExpect(model().attribute("reviewsModel", allReviewsInModel));
     }
 
@@ -62,9 +62,9 @@ public class ReviewControllerMvcTest {
 
     @Test
     public void shouldBeNotFoundForRequestsNotInModel() throws Exception {
-        Long courseTwoId =2L;
-        when(reviewRepo.findOne(courseTwoId)).thenReturn(reviewTwo);
-        mockMvc.perform(get("/course?id=3")).andExpect(status().isNotFound());
+        Long reviewTwoId =2L;
+        when(reviewRepo.findOne(reviewTwoId)).thenReturn(reviewTwo);
+        mockMvc.perform(get("/review?id=3")).andExpect(status().isNotFound());
     }
 
 }
