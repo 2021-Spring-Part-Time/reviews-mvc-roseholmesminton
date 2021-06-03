@@ -5,7 +5,66 @@
   margin: 0;
   padding: 0;
   }
-
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.grid-title {
+  grid-column:1 /2;
+  padding: 10px;
+  text-align: center;
+}
+.grid-image {
+  border-radius: 25px;
+  grid-column:1 /2;
+  padding: 10px;
+  text-align: center;
+}
+.grid-copyright {
+  grid-column:1 /2;
+  text-align: center;
+}
+.grid-nickname {
+  grid-column:1 /2;
+  padding: 10px;
+  text-align: center;
+}
+.grid-reviewCategory {
+  grid-column:1/2;
+  padding: 10px;
+  text-align: center;
+}
+.grid-content {
+  grid-column:1/2;
+  grid-row:6/11;
+  padding: 10px;
+}
+.grid-nationality {
+  grid-column:2/2;
+  grid-row:7/8;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+}
+.grid-loveInterests {
+  grid-column:2/2;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+}
+.grid-weaponsOfChoice {
+  grid-column:2/2;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+}
+.grid-fightingStyles {
+  grid-column:2/2;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+}
+.grid-specialSkills {
+  grid-column:2/2;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+}
 a:hover{
   background-color: #add8e6;
 }
@@ -18,16 +77,13 @@ a:hover{
     padding: 1em 1em;
     text-align: center;
   }
-h1{
-color:#111;
-}
 
   header,
   main,
   footer {
-    margin: 0 auto;
-    max-width: 800px;
-    }
+  margin: 0 auto;
+  max-width: 800px;
+  }
 
 html {
   font-size: 16px;
@@ -39,9 +95,9 @@ border-radius:8px;
 }
 
 main{
-display:grid;
-grid-template-columns: repeat(2, 1fr)
-grid-gap: 15px 20px;
+  display:grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
 }
 
 nav {
@@ -67,5 +123,5 @@ nav a:hover {
 }
 
 ul{
-padding: 1em 2em;
+padding: 1em 1em;
 }

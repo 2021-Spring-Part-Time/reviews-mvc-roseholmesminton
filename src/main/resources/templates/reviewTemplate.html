@@ -6,25 +6,48 @@
 <body>
 
 <header>
-    <link href = "/css/styles.css" rel = "stylesheet"/>
-</header>
-
-<main>
+    <link href="/css/styles.css" rel="stylesheet"/>
     <nav>
         <a href="/reviews">Team Avatar</a>
     </nav>
-    <h1 th:text="${reviewModel.title}"></h1>
+</header>
 
-    <p><img th:src="${reviewModel.image}"></p>
-    <h5 th:text="' Nickname: ' + ${reviewModel.nickname}"></h5>
-    <h3 th:text="${reviewModel.reviewCategory}"></h3>
-    <p th:text="${reviewModel.content}"></p>
-    <h4 th:text=" ' Nationality: ' + ${reviewModel.nationality}"></h4>
-    <h4 th:text=" ' Love Interests: ' + ${reviewModel.loveInterests}"></h4>
-    <h4 th:text=" ' Weapons of Choice: ' + ${reviewModel.weaponsOfChoice}"></h4>
-    <h4 th:text=" ' Fighting Styles: ' + ${reviewModel.fightingStyles}"></h4>
-    <h4 th:text=" ' Special Skills: ' + ${reviewModel.specialSkill}"></h4>
-
+<main>
+    <div class="grid-container">
+        <div class="grid-title">
+            <h1  th:text="${reviewModel.title}"></h1>
+        </div>
+        <div class="grid-image">
+            <p><img th:src="${reviewModel.image}"></p>
+        </div>
+        <div class="grid-copyright">
+            <h6>copyright</h6>
+        </div>
+        <div class="grid-nickname">
+            <h5 th:text="' Nickname: ' + ${reviewModel.nickname}"></h5>
+        </div>
+        <div class="grid-reviewCategory">
+            <h3 th:text="${reviewModel.reviewCategory}"></h3>
+        </div>
+        <div class="grid-content">
+            <p th:text="${reviewModel.content}"></p>
+        </div>
+        <div class="grid-nationality">
+            <h4 th:text=" ' Nationality: ' + ${reviewModel.nationality}"></h4>
+        </div>
+            <div class = "grid-loveInterests">
+        <h4 th:text=" ' Love Interests: ' + ${reviewModel.loveInterests}"></h4>
+        </div>
+        <div class="grid-weaponsOfChoice">
+            <h4 th:text=" ' Weapons of Choice: ' + ${reviewModel.weaponsOfChoice}"></h4>
+        </div>
+        <div class="grid-fightingStyles">
+            <h4 th:text=" ' Fighting Styles: ' + ${reviewModel.fightingStyles}"></h4>
+        </div>
+        <div class="grid-specialSkills">
+            <h4 th:text=" ' Special Skills: ' + ${reviewModel.specialSkill}"></h4>
+        </div>
+    </div>
 </main>
 <footer>
     <small>&copy roseholmesminton 2021</small>
