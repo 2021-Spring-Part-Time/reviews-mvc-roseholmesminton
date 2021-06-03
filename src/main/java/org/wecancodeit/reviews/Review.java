@@ -1,11 +1,14 @@
 package org.wecancodeit.reviews;
 
+import javax.persistence.Lob;
+
 public class Review {
     private Long id;
     private String title;
     private String image;
     private String nickname;
     private String reviewCategory;
+    @Lob
     private String content;
     private String nationality;
     private String loveInterests;

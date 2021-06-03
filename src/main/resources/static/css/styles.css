@@ -1,75 +1,104 @@
 * {
   box-sizing: border-box;
   font-family: sans-serif;
+  background-color: #ffffff
   line-height: 1.618em;
   margin: 0;
   padding: 0;
   }
+ .fightingStyles{
+  font-weight: bold;
+  }
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto;
-}
-.grid-title {
-  grid-column:1 /2;
-  padding: 10px;
-  text-align: center;
-}
-.grid-image {
-  border-radius: 25px;
-  grid-column:1 /2;
-  padding: 10px;
-  text-align: center;
-}
-.grid-copyright {
-  grid-column:1 /2;
-  text-align: center;
-}
-.grid-nickname {
-  grid-column:1 /2;
-  padding: 10px;
-  text-align: center;
-}
-.grid-reviewCategory {
-  grid-column:1/2;
-  padding: 10px;
-  text-align: center;
+  grid-template-columns: auto auto auto;
 }
 .grid-content {
-  grid-column:1/2;
-  grid-row:6/11;
-  padding: 10px;
-}
-.grid-nationality {
-  grid-column:2/2;
-  grid-row:7/8;
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 10px;
-}
-.grid-loveInterests {
-  grid-column:2/2;
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 10px;
-}
-.grid-weaponsOfChoice {
-  grid-column:2/2;
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  grid-column: 1 / 4;
+  grid-row: 3 / 12;
   padding: 10px;
 }
 .grid-fightingStyles {
-  grid-column:2/2;
+  background-color: #dedede;
   border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 10px;
+  font-size: 11px;
+  grid-column: 4 / 4;
+  grid-row: 8 / 8;
+  padding: .5em .5em;
 }
-.grid-specialSkills {
-  grid-column:2/2;
+.grid-image {
+  grid-column: 4/ 4;
+  grid-row: 3 / 3;
+  text-align: center;
+}
+.grid-loveInterests {
+  background-color: #dedede;
   border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 11px;
+  grid-column:4 / 4;
+  grid-row: 6 / 6;
+  padding: .5em .5em;
+}
+.grid-nationality {
+  background-color: #dedede;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size:11px;
+  grid-column: 4/ 4;
+  grid-row: 5/ 5;
+  padding: .5em .5em;
+}
+.grid-nickname {
+  grid-column:4 / 4;
+  grid-row:4 / 4;
+  text-align: center;
+}
+.grid-reviewCategory {
+  grid-column: 1 / 4;
+  grid-row: 2 / 2;
+  text-align: center;
+}
+.grid-title {
+  grid-column:1 / 4;
+  grid-row:1 / 1;
   padding: 10px;
+  text-align: center;
+ }
+.grid-specialSkills {
+  background-color:#dedede;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 11px;
+  grid-column: 4 / 4;
+  grid-row: 9 / 9;
+  padding: .5em .5em;
+}
+.grid-weaponsOfChoice {
+  background-color:#dedede;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 11px;
+  grid-column: 4 / 4;
+  grid-row: 7 /7;
+  padding: .5em .5em;
+}
+.loveInterests{
+font-weight: bold;
+}
+.nationality{
+  font-weight: bold;
+}
+.specialSkills{
+  font-weight: bold;
+}
+.team-avatar-grid-content{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.weaponsOfChoice{
+  font-weight: bold;
 }
 a:hover{
-  background-color: #add8e6;
+  background-color: #888;
 }
-
-  footer {
+ footer {
     background: #666;
     color: #fff;
     margin-bottom: 1em;
@@ -77,26 +106,28 @@ a:hover{
     padding: 1em 1em;
     text-align: center;
   }
-
+  h1{
+  text-align: center;
+  }
   header,
   main,
   footer {
   margin: 0 auto;
   max-width: 800px;
   }
-
 html {
   font-size: 16px;
   margin-top: 3em;
 }
 
 img{
-border-radius:8px;
+height:200px;
+opacity:100%;
 }
 
 main{
   display:grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   padding: 10px;
 }
 
@@ -119,7 +150,7 @@ nav a {
 }
 
 nav a:hover {
-  background: #888;
+  background: #666;
 }
 
 ul{

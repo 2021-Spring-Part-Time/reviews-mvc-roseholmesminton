@@ -8,13 +8,13 @@
 <header>
     <link href = "/css/styles.css" rel = "stylesheet"/>
     <h1>Team Avatar</h1>
-    <img src="/images/TeenAvatar.jpg">
 </header>
 
 <main>
-    <ul>
-        <li th:each="review: ${reviewsModel}"><a th:href="@{/review(id=${review.id})}" th:text="${review.title}"></a></li>
-    </ul>
+    <div class="team-avatar-grid-content">
+            <p th:each="review: ${reviewsModel}"><a th:href="@{/review(id=${review.id})}"> <img th:src="${review.image}">
+           </a></p>
+    </div>
 </main>
 
 <footer>
