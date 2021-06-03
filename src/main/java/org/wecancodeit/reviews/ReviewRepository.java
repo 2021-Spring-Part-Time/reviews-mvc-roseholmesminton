@@ -17,11 +17,12 @@ public class ReviewRepository {
                 "light who’s goal is to maintain balance and peace in the world. The Avatar is the only one who can bend" +
                 " all four elements. After running away from home, Aang along side his pet sky bison Appa get frozen in" +
                 " an iceberg for 100 years. After Sokka and Katara discover them and free them from the ice, he learns" +
-                " that his people have been wiped out by the Fire Nation and that for the time he & Appa were frozen " +
-                "the Fire Nation started a century long war. The Fire Nation has been terrorizing the other nations and each day" +
-                " get closer to completing their goal for worldwide domination. Aang must learn how to bend all four " +
-                "elements and stop the Fire Nation before it’s too late. Aang’s journey is one of him learning to accept" +
-                " a destiny that he never wanted in the first place while also being a fun loving kid.",
+                " that his people have been wiped out by the Fire Nation and that during the time he and Appa were frozen  " +
+                "in the iceberg, the Fire Nation had started a century long war. The Fire Nation were terrorizing " +
+                "the other nations. Each day they were get closer to completing their goal for worldwide domination" +
+                ". Aang must learn how to bend all four elements and stop the Fire Nation by defeating the Fire Lord. " +
+                "Aang’s journey is one where he learns to accept a destiny that he never wanted in the first place while " +
+                "also being a fun loving kid.",
                 "Air Nation", "Katara", "Air, airbending staff",
                 "Avatar state, airbending," +
                 " waterbending, earthbending, firebending, engerybending", "The bridge between the physical " +
@@ -29,7 +30,7 @@ public class ReviewRepository {
         Review katara = new Review(2L, "Katara", "/images/Katara.jpg", "Sugar Queen",
                 "Waterbender", "Katara is a waterbender from the Southern Water Tribe. The first " +
                 "waterbender born in the Southern Tribe in decades. As a child, her mother was murdered by the commander" +
-                " of a raid. The Fire Nation was searching the tribe to capture their last waterbender. Katara's mother " +
+                " of a Fire Nation raid. The Fire Nation was searching the tribe to capture their last waterbender. Katara's mother " +
                 "lied and told them she was the last waterbender. She sacrificed her life to spare her daughter. After " +
                 "her mother's death, Katara took it upon herself to be the mother of her family, especially toward her" +
                 " older brother Sokka. After she and her brother discover Aang in the iceberg, they embark on a journey" +
@@ -38,7 +39,7 @@ public class ReviewRepository {
                 " Southern Water Tribe", "Jet, Aang", "Water", "Waterbending",
                 "Water healing");
         Review sokka = new Review(3L, "Sokka", "/images/Sokka.jpg", "Captain Boomerang",
-                "Warrior", "Sokka is the older brother of Katara and a non-bender in team Avatar. " +
+                "Warrior", "Sokka is the older brother of Katara and a non-bender in Team Avatar. " +
                 "After his mother’s death, his father left their tribe to go fight in the war. This made Sokka want to " +
                 "become the leader of his tribe. Clumsy, sarcastic and full of humor, Sokka provides most of the comedy " +
                 "of the group while also bringing his outside the box thinking and strategies to the table. Sokka’s " +
@@ -63,13 +64,15 @@ public class ReviewRepository {
                 "Earth Kingdom", "Sokka", "War fans", "Tessenjutsu",
                 "Leader of the Kyoshi Warriors");
         Review zuko = new Review(6L, "Prince Zuko", "/images/Zuko.jpg", "Zuzu",
-                "Firebender", "Zuko is the banished prince of the Fire Nation. At the age of 13," +
-                "Prince Zuko's father banished by him from the Fire Nation because he spoke out of hand at a war " +
-                "planning meeting. As punishment his father burned hisAfterwards, his father told him he had to find " +
-                "the Avatar. If Prince Zuko could find and capture the Avatar, his father would restore his honor and he’d be " +
-                "allowed back home. A seemingly impossible mission. However, Zuko was determined to find the Avatar " +
-                "and regain his right to the throne.  From the moment the Avatar emerges from the iceberg, Zuko goes " +
-                "through a life-changing journey filled with ups and downs and a " +
+                "Firebender", "Zuko is the banished prince of the Fire Nation. At the age of 13, " +
+                "Prince Zuko's father banished him from the Fire Nation because he spoke out of hand at a war " +
+                "planning meeting. As punishment his father burned the left side of his face. Then, his father told him" +
+                " he had to find the Avatar. He said that if Zuko could find and capture the Avatar, he would " +
+                "restore his honor and he’d be allowed back home. Finding and capturing the Avatar was seemingly " +
+                "an impossible mission because no one had seen the Avatar for 100 years. However, Zuko was determined to " +
+                "find the Avatar and regain his right to the throne.  When the Avatar is freed from an from " +
+                "iceberg by Katara and Sokka, a mysterious light shoots up into the sky and can be seen for miles.  When" +
+                " Zuko spots the light beam he goes through a life-changing journey filled with ups and downs on a " +
                 "path of self-discovery, leading him to befriend the Avatar. Zuko’s journey is one of finding his " +
                 "honor.", "Fire Nation",
                 "Mai", "Fire, broadswords", "Firebending",
