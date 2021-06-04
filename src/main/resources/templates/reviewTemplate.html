@@ -13,6 +13,9 @@
 </header>
 
 <main>
+    <nav>
+        <a href="/reviews">Team Avatar</a>
+    </nav>
     <div class="grid-container">
         <div class="grid-title">
             <h1  th:text="${reviewModel.title}"></h1>
@@ -20,29 +23,29 @@
         <div class="grid-image">
             <p><img th:src="${reviewModel.image}"></p>
         </div>
-        <div class="grid-nickname">
-            <h5 th:text="' Nickname: ' + ${reviewModel.nickname}"></h5>
-        </div>
         <div class="grid-reviewCategory">
-            <h3 th:text="${reviewModel.reviewCategory}"></h3>
+            <h2 th:text="${reviewModel.reviewCategory}"></h2>
         </div>
         <div class="grid-content">
             <p th:text="${reviewModel.content}"></p>
         </div>
-        <div class="grid-nationality">
-            <span class="nationality">Nationality: </span>  <span th:text=" ${reviewModel.nationality}"></span>
+        <div class="grid-sidebar-title">
+
         </div>
-            <div class = "grid-loveInterests">
-        <span class="loveInterests">Love Interests: </span> <span th:text=" ${reviewModel.loveInterests}"></span>
-        </div>
-        <div class="grid-weaponsOfChoice">
-            <span class="weaponsOfChoice">Weapons of Choice: </span>  <span th:text=" ${reviewModel.weaponsOfChoice}"></span>
-        </div>
-        <div class="grid-fightingStyles">
-            <span class="fightingStyles">Fighting Styles: </span>  <span th:text=" ${reviewModel.fightingStyles}"></span>
-        </div>
-        <div class="grid-specialSkills">
-            <span class="specialSkills">Special Skills: </span>  <span th:text=" ${reviewModel.specialSkill}"></span>
+        <div class="grid-profile">
+            <h3>Profile</h3>
+            <p><span class="nickname">Nickname: </span>  <span th:text="${reviewModel.nickname}"></span>
+            </p>
+            <p><span class="nationality">Nationality: </span>  <span th:text=" ${reviewModel.nationality}"></span>
+            </p>
+            <p><span class="loveInterests">Love Interests: </span> <span th:text=" ${reviewModel.loveInterests}"></span>
+            </p>
+            <p><span class="weaponsOfChoice">Weapons of Choice: </span>  <span th:text=" ${reviewModel.weaponsOfChoice}"></span>
+            </p>
+            <p><span class="fightingStyles">Fighting Styles: </span>  <span th:text=" ${reviewModel.fightingStyles}"></span>
+            </p>
+            <p><span class="specialSkills">Special Skills: </span> <span th:text=" ${reviewModel.specialSkill}"></span>
+            </p>
         </div>
     </div>
 </main>

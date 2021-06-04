@@ -12,8 +12,8 @@
 
 <main>
     <div class="team-avatar-grid-content">
-            <p th:each="review: ${reviewsModel}"><a th:href="@{/review(id=${review.id})}"> <img th:src="${review.image}">
-           </a></p>
+            <p th:each="review: ${reviewsModel}"><a th:href="@{/review(id=${review.id})}"><img th:src="${review.image}">
+            </a><span th:text ="${review.title}"></span></p>
     </div>
 </main>
 
